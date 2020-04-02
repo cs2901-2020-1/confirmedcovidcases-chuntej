@@ -1,6 +1,8 @@
-|Integrantes|Código|URI|
-|-----------|------|---|
-|Cristian Caballero|201810431|[](https://github.com/......)
-|Fabrizio Garcia|123|[](https://github.com/....)
-|Nicolas Figueroa|201810294|[NicolasFG](https://github.com/NicolasFG)
-|Juan Galvez|201810040|[JuanGA12](https://github.com/JuanGA12)
+# Confirmed COVID Cases
+
+## Miembros del grupo
+
+* Fabrizio Garcia - 201810160
+* Cristian Caballero - 201810431
+* Nicolas Figueroa - 201810294
+* Juan Galvez - 201810040
