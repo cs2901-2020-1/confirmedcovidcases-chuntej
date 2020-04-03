@@ -8,9 +8,9 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Entity
-@Table (name = "daylicases")
+@Table (name = "dailycases")
 
-public class DayliCases implements Serializable {
+public class DailyCases implements Serializable {
 
     @Id
     private Long id;
@@ -21,10 +21,10 @@ public class DayliCases implements Serializable {
     @Column
     private Date    fecha;
 
-    public DayliCases() {
+    public DailyCases() {
     }
 
-    public DayliCases(Long id, Integer cantidad, Date fecha) {
+    public DailyCases(Long id, Integer cantidad, Date fecha) {
         this.id = id;
         this.cantidad =  cantidad;
         this.fecha = fecha;

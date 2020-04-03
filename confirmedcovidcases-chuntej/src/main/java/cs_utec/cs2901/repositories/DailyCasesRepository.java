@@ -1,6 +1,6 @@
 package cs_utec.cs2901.repositories;
 
-import cs_utec.cs2901.data.DayliCases;
+import cs_utec.cs2901.data.DailyCases;
 import org.springframework.data.repository.CrudRepository;
 
 /*
@@ -12,5 +12,5 @@ import org.springframework.data.repository.CrudRepository;
     DELETE : DELETE FROM daylicases WHERE id = 3;
 
  */
-public interface DayliCasesRepository extends CrudRepository<DayliCases, Long> {
+public interface DailyCasesRepository extends CrudRepository<DailyCases, Long> {
 }
