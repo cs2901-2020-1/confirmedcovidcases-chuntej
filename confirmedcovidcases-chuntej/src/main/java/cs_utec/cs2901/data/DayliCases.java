@@ -3,10 +3,13 @@ package cs_utec.cs2901.data;
 import javax.persistence.Entity;
 import javax.persistence.Column;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import java.io.Serializable;
 import java.util.Date;
 
 @Entity
+@Table (name = "daylicases")
+
 public class DayliCases implements Serializable {
 
     @Id
