@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
 @RestController
 @RequestMapping("/dailycases")
 public class DailyCasesController {
@@ -14,16 +13,19 @@ public class DailyCasesController {
     @Autowired
     private DailyCasesBusiness business;
 
+    //create
     @PostMapping(value = "/")
-    public DailyCases create(@RequestBody DailyCases item){
+    public DailyCases create (@RequestBody DailyCases item){
         return business.create(item);
     }
 
+    //read
     @GetMapping("/")
-    public List<DailyCases> read(){
-        return  business.findAll();
+    public List<DailyCases> read (){
+        return business.findAll();
     }
 
+    //update
     @PutMapping("/{id}")
     public DailyCases update(
             @PathVariable Long id,
@@ -32,11 +34,10 @@ public class DailyCasesController {
         return business.update(item);
     }
 
+    //delete
     @DeleteMapping("/{id}")
     public void delete(@PathVariable Long id){
         business.delete(id);
     }
-
-
 
 }
