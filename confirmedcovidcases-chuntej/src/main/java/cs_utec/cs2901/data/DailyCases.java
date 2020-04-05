@@ -8,7 +8,9 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Entity
-@Table (name = "dailycases")
+@Table (name = "dailycases",
+        schema = "public"
+)
 
 public class DailyCases implements Serializable {
 

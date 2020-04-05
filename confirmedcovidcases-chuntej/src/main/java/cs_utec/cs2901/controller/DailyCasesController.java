@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+
 @RestController
 @RequestMapping("/dailycases")
 public class DailyCasesController {
@@ -14,7 +15,7 @@ public class DailyCasesController {
     private DailyCasesBusiness business;
 
     //create
-    @PostMapping(value = "/")
+    @PostMapping("/")
     public DailyCases create (@RequestBody DailyCases item){
         return business.create(item);
     }
